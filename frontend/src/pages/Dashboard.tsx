@@ -257,7 +257,7 @@ const Dashboard: React.FC = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        "http://localhost:8000/api/v1/admin/claim-orphans",
+        "https://queueless-backend-final.onrender.com/api/v1/admin/claim-orphans",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
